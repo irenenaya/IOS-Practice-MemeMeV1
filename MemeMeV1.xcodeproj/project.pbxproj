@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		266E880D1F7C5508007E92BD /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E880C1F7C5508007E92BD /* Meme.swift */; settings = {ASSET_TAGS = (); }; };
+		266E880F1F7C74A3007E92BD /* MemeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E880E1F7C74A2007E92BD /* MemeCollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		266E88111F7C7683007E92BD /* MemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E88101F7C7683007E92BD /* MemeCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		266E88131F7C7AB0007E92BD /* MemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266E88121F7C7AB0007E92BD /* MemeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		26C532571F75DF28009CF1E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C532561F75DF28009CF1E6 /* AppDelegate.swift */; };
 		26C532591F75DF28009CF1E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C532581F75DF28009CF1E6 /* ViewController.swift */; };
 		26C5325C1F75DF28009CF1E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C5325A1F75DF28009CF1E6 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		266E880C1F7C5508007E92BD /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		266E880E1F7C74A2007E92BD /* MemeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewController.swift; sourceTree = "<group>"; };
+		266E88101F7C7683007E92BD /* MemeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		266E88121F7C7AB0007E92BD /* MemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeTableViewController.swift; sourceTree = "<group>"; };
 		26C532531F75DF28009CF1E6 /* MemeMeV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMeV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C532561F75DF28009CF1E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26C532581F75DF28009CF1E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,12 +62,16 @@
 		26C532551F75DF28009CF1E6 /* MemeMeV1 */ = {
 			isa = PBXGroup;
 			children = (
+				266E880C1F7C5508007E92BD /* Meme.swift */,
 				26C532561F75DF28009CF1E6 /* AppDelegate.swift */,
+				266E88101F7C7683007E92BD /* MemeCollectionViewCell.swift */,
 				26C532581F75DF28009CF1E6 /* ViewController.swift */,
 				26C5325A1F75DF28009CF1E6 /* Main.storyboard */,
 				26C5325D1F75DF28009CF1E6 /* Assets.xcassets */,
 				26C5325F1F75DF28009CF1E6 /* LaunchScreen.storyboard */,
 				26C532621F75DF28009CF1E6 /* Info.plist */,
+				266E880E1F7C74A2007E92BD /* MemeCollectionViewController.swift */,
+				266E88121F7C7AB0007E92BD /* MemeTableViewController.swift */,
 			);
 			path = MemeMeV1;
 			sourceTree = "<group>";
@@ -134,8 +146,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266E880F1F7C74A3007E92BD /* MemeCollectionViewController.swift in Sources */,
 				26C532591F75DF28009CF1E6 /* ViewController.swift in Sources */,
+				266E88111F7C7683007E92BD /* MemeCollectionViewCell.swift in Sources */,
+				266E88131F7C7AB0007E92BD /* MemeTableViewController.swift in Sources */,
 				26C532571F75DF28009CF1E6 /* AppDelegate.swift in Sources */,
+				266E880D1F7C5508007E92BD /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +301,7 @@
 				26C532671F75DF28009CF1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

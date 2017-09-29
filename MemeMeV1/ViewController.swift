@@ -20,13 +20,8 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     @IBOutlet weak var toolbar: UIToolbar!
     @IBOutlet weak var shareButton: UIButton!
     
-    // MARK : Meme struct to store memes
-    struct Meme {
-        var toptext : String
-        var bottomtext : String
-        var originalImage : UIImage
-        var memedImage : UIImage
-    }
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
     
     // MARK : Meme text attributes
     let memeTextAttributes:[String:AnyObject] = [
@@ -38,6 +33,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
      // MARK : View lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
+      //  navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Start Over", style: .Plain, target: self, action: "startOver")
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -56,6 +52,7 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         super.viewWillDisappear(animated)
         unsubscribeFromKeyboardNotifications()
     }
+    
     
     // MARK : hide / show keyboard
     // functions that make view shift up when keyboard appears
@@ -111,7 +108,15 @@ UINavigationControllerDelegate, UITextFieldDelegate {
             }
         }
         self.presentViewController(controller, animated: true, completion: nil)
-        
+    }
+
+    @IBAction func savePicture(sender: AnyObject) {
+        let image = generateMemedImage()
+        save(image)        
+    }
+    
+    @IBAction func startOver(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     // MARK : Image Picker controllers
@@ -155,6 +160,8 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     func save(img : UIImage) {
         let meme = Meme(toptext: topText.text!, bottomtext: bottomText.text!, originalImage: imagePView.image!, memedImage: img)
+        Meme.allMemes.append(meme)
+
     }
 }
 
